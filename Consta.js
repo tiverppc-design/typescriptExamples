@@ -48,7 +48,7 @@ let color
     }*/
 Object.defineProperty(exports, "__esModule", { value: true });
 //Else if example 
-let marks = 0;
+let marks = 65;
 if (marks >= 90) {
     console.log("Grade A");
 }
