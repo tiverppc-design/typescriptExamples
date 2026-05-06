@@ -49,3 +49,7 @@ const profile ={
 
 }
 console.log(profile.Follow);
+
+let test = "Hello World"
+ test = "Welcome to TypeScript";
+console.log(test);      
