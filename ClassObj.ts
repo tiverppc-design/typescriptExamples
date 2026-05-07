@@ -1,4 +1,4 @@
-class Test
+class Test5
 {
     //methds
     M1() : void
@@ -18,7 +18,7 @@ class Test
     }
 }
 
-const t1 = new Test();
+const t1 = new Test5();
 t1.M1();
 t1.M2();
 t1.M3();
