@@ -84,8 +84,7 @@ export class markss{
 
 }
   export const m5 = new markss();
-    m5.checkresults();
-    m5.checktemp();
+
   
 
 

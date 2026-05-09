@@ -1,5 +1,7 @@
-import {markss} from "./Exp_CMO";  
-import {m5} from "./Exp_CMO";
+import {markss} from "./Exp_CMO.js";  
+import {m5} from "./Exp_CMO.js";
 
 
 m5.checkwebsiteaccess(); 
+m5.checktemp();
+m5.checkresults();
