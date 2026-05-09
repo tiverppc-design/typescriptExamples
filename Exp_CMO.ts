@@ -1,6 +1,7 @@
 
 
-class markss{
+
+export class markss{
 
      checkresults() : void { 
 
@@ -79,13 +80,13 @@ class markss{
     }
    }
 
-
+     
 
 }
-  const m5 = new markss();
+  export const m5 = new markss();
     m5.checkresults();
     m5.checktemp();
-    m5.checkwebsiteaccess();
+  
 
 
 
