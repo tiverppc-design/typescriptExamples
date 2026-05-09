@@ -1,0 +1,14 @@
+{
+  "name": "typescriptExamples",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node expvar.js",
+    "dev": "npx ts-node expvar.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1"
+  }
+}
