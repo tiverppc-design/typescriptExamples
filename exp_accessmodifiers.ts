@@ -1,5 +1,8 @@
+import {faker} from "@faker-js/faker";
+
+
 class AccessModifiers {
-  public name : string = 'Tiversahni';
+  public name : string = faker.person.fullName();
   private salary  : number = 100000;    
     protected city  : string = 'New York';
 
