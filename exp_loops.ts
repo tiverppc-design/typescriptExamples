@@ -28,3 +28,19 @@ constructor() {
         
     }
         }   let loops2_1 = new loops2();
+
+
+
+
+
+        class loops3{
+
+            constructor() {
+                for (let a6 = 0; a6 < 20; a6++) {
+                     if (a6 % 5 ==0) {
+                        console.log(" Number is divided by 5 : " + a6);
+                     }
+                }
+            }
+         }   let loops3_1 = new loops3();
+                    
