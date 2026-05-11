@@ -36,11 +36,45 @@ constructor() {
         class loops3{
 
             constructor() {
-                for (let a6 = 0; a6 < 20; a6++) {
+                for (let a6 = 5; a6 <= 20; ++a6) {
                      if (a6 % 5 ==0) {
                         console.log(" Number is divided by 5 : " + a6);
                      }
                 }
             }
          }   let loops3_1 = new loops3();
+
+
+          class loops4{
+
+            constructor() {
+                for (let a6 = 5; a6 <= 20; ++a6) {
+                     if (a6 % 2 !==0) {
+                        console.log(" Number is not divided by 2 : " + a6);
+                     }
+                }
+            }
+         }   let loops4_1 = new loops4();
                     
+                    
+          class loops5{
+
+            constructor() {
+                for (let a6 = 0; a6 <= 10; ++a6) {
+                     
+                        console.log( "5 * " +a6 + "=" + (5 * a6));  
+                     
+                }
+            }
+         }   let loops5_1 = new loops5();
+
+         class loops6{
+
+            constructor() {
+                for (let a6 = 0; a6 <= 5; ++a6) {
+                     
+                        console.log( " * ".repeat(a6));
+                     
+                }
+            }
+         }   let loops6_1 = new loops6();
