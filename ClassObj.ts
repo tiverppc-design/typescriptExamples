@@ -41,7 +41,7 @@ console.log(t3.age2);
 
 
 
-class test4
+class test4 extends test3 
 { 
     exam() : void 
     {
