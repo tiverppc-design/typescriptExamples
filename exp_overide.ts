@@ -3,7 +3,7 @@ class overload{
 //method intialization can be multiple times with different parameters but the name of the method should be same
 
 add5(a:number,b:number):number;
-add5(a:number,b:number, c:number):number;
+     
 
 //method implementation should be only one time. 
 add5(a:number,b:number, c:number=0 ) : number 
