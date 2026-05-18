@@ -1,3 +1,6 @@
+
+
+
 class condition {
     a : number = 10; 
     constructor() {

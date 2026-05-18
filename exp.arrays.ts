@@ -40,7 +40,7 @@ continue;
 }   let count1 = new count();
 
 
-class sum{
+export class sum{
     constructor() {
         let arr =[10, 20, 40, 60, 70];
         let sum =0; 
@@ -59,7 +59,7 @@ class sum{
 }   let sum1 = new sum();
 
 
-class avg{
+export class avg{
     constructor() {
         let arr =[10, 20, 40, 60, 70];
         let sum =0; 
@@ -103,4 +103,41 @@ console.log("Failed");
 }
         
     }
-} let avg1 = new avg();
+} 
+
+
+class max{
+    constructor()
+
+    {
+
+        let arry = [20, 15, 65.4, 30];
+        let max = arry[0];
+        for (let i = 1; i < arry.length; i++) {
+            if (arry[i] > max) {
+                max = arry[i];
+            }
+        }
+        console.log("Maximum value in the array is: " + max);   
+    }
+}   let max1 = new max();
+
+
+class min {
+    constructor() {
+
+    let arry = [23, 4,56,76,21,-1];   
+    let min = arry[0];
+         for(let i of arry) {
+            
+if (i<min) {
+    min = i;
+   }   
+}
+console.log("Minimum value in the array is: " + min);
+         
+
+
+         }  
+        }
+  let min1 = new min();
