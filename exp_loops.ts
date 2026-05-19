@@ -9,7 +9,7 @@ constructor() {
 
 
 }
-let loops1 = new loops();*/
+let loops1 = new loops();
 
 
 class loops2{
@@ -77,4 +77,77 @@ constructor() {
                      
                 }
             }
-         }   let loops6_1 = new loops6();
+         }   let loops6_1 = new loops6(); */
+
+
+
+
+
+         class employee{
+            constructor(){
+
+                let salary = [100030, 200020, 45002, 65002, 10000];
+                let minSalary = salary[0];
+                let expense = 0;
+                let income = 550000;
+                let maxSalary = salary[0];
+                for (let i = 1; i < salary.length; i++) {
+                    if (salary[i] < minSalary) {
+                        minSalary = salary[i];
+                    }
+                    if (salary[i] > maxSalary) {
+                        maxSalary = salary[i];  
+                    }
+                }
+                console.log("Minimum salary is: " + minSalary);
+                console.log("Maximum salary is: " + maxSalary);
+
+                for (let i = 0; i < salary.length; i++) {
+                    expense = expense + salary[i];
+                }
+                console.log("Total expense is: " + expense);    
+        
+                let profit = income - expense;
+                  if (profit > 0) {
+                    console.log("Profit is: " + profit);
+                  } else {
+                    console.log("Loss is: " + (-profit));
+                  }
+
+                   let tax = 0;
+                   if ( profit > 50000) {
+                    tax = profit * 0.2;
+                   } else {
+                    tax = profit * 0.1;
+                   }
+                   console.log("Tax is: " + tax);
+
+                    let netProfit = profit - tax;
+                    console.log("Net profit is: " + netProfit);
+
+                   let netProfitPercentage = (netProfit / income) * 100;
+                   console.log("Net profit percentage is: " + netProfitPercentage.toFixed(2) + "%");
+
+                   let  netProfitPercentage2 = (netProfit / expense) * 100;
+                   console.log("Net profit percentage with respect to expense is: " + netProfitPercentage2.toFixed(2) + "%");
+                   
+                   if (netProfitPercentage > 20) {
+                    console.log("The company is doing well");
+                   } else if (netProfitPercentage > 10) {
+                    console.log("The company is doing okay");
+                   } else {
+                    console.log("The company is not doing well");
+                
+                   }
+                        let averagesalary = expense/salary.length;
+                        console.log("Average salary is: " + averagesalary);
+
+                        if (averagesalary > 50000) {
+                            console.log("The average salary is high");
+                        } else if (averagesalary > 20000) {
+                            console.log("The average salary is moderate");
+                        } else {
+                            console.log("The average salary is low");
+                        }
+                    }       
+                } let employee1 = new employee();
