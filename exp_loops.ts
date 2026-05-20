@@ -151,3 +151,51 @@ constructor() {
                         }
                     }       
                 } let employee1 = new employee();
+
+
+
+                class star{
+                     constructor() {
+
+                        let i=5; 
+
+                        for (let j= 1; j<=i; j++)
+                        {
+                            console.log("*" .repeat(j));
+                        }
+                     }  
+                } let star1 = new star();
+
+
+               
+
+class Star2 {
+
+    constructor() {
+
+        for (let i = 9; i >= 1; i--) {
+
+            if (i % 2 == 0) {   
+                continue;
+            }
+
+            let pattern = " ";
+
+            for (let j = 1; j <= i ; j++) {
+
+                pattern = pattern + "  * ";
+
+                
+            }
+
+            console.log(pattern);
+        }
+    }
+}
+
+let star2_1 = new Star2();
+
+
+
+
+                
