@@ -29,7 +29,43 @@ test('open and close app', async ({page}) => {
   await page.waitForTimeout(5000);
 // Click on Logout button
    await page.locator('body').click();    
-  console.log('App logout successfully'); 
+  console.log('App logout successfully');   
+
+  const frame = page.frameLocator('iframe');
+  await frame.locator('body').selectOption('EMP. ID');
+  console.log("value selected from dropdown");
+  await page.waitForTimeout(5000);
+
+  await frame.locator('body').fill('234');
+  console.log("value entered in search box");
+  await page.waitForTimeout(5000);
+  await frame.locator('search').click(); 
+  console.log("search button clicked");
+
+  //click on check box
+
+  await frame.locator('//input[@name="chkLocID[]"]').uncheck();
+  console.log("Unchecked the checkbox");
+
+  //delete the record
+    await frame.locator('//input[@value="delete"]').click();
+
+
+     // select value from dropdown using index
+
+     await frame.locator('select[@name="loc_code"]').selectOption({index: 3});
+     console.log("value selected using index");
+
+     //select value from dropdown using value attribute
+
+     await frame.locator('select[@name="loc_code"]').selectOption({value:"EMP. ID"});
+     console.log("value selected from dropdown using atrribute value");
+
+     //wait for load state
+     await page.waitForLoadState('networkidle');
+     console.log("Page loaded successfully");
+     
+
 });
 
  
