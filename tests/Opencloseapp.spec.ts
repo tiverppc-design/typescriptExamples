@@ -20,11 +20,11 @@ test('open and close app', async ({page}) => {
         await expect(page).toHaveURL('http://google.com');
     console.log('Login validated successfully');
   // Mouse hover on Menu 
-  await page.locator('body').hover();
+  await page.locator('text=Test').hover();
    console.log('Mouse hovered successfully');
   await page.waitForTimeout(5000);
      // Click on Submenu  
-  await page.getByText('body').click();
+         await page.getByText('Test').click();
    console.log('Mouse clicked successfully');
   await page.waitForTimeout(5000);
 // Click on Logout button
