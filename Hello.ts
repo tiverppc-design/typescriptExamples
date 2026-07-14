@@ -1,4 +1,10 @@
+import staticclass from "./Staticclass.js";
 
+
+const add3 = new staticclass();
+add3.greeting3();
+
+staticclass.greeting2();
 
 const fullName : String = "Tony Stark";
 
